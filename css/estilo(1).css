@@ -1,0 +1,502 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+
+@import 'https://fonts.googleapis.com/css?family=Raleway';/**'Raleway'**/
+
+@font-face{
+   font-family: "Demo_ConeriaScript_Slanted";
+   font-style: normal;
+   font-weight: normal;
+   src: url(font/Demo_ConeriaScript_Slanted.ttf);
+}
+
+
+   
+        /* jssor slider bullet navigator skin 05 css */
+        /*
+        .jssorb05 div           (normal)
+        .jssorb05 div:hover     (normal mouseover)
+        .jssorb05 .av           (active)
+        .jssorb05 .av:hover     (active mouseover)
+        .jssorb05 .dn           (mousedown)
+        */
+        .jssorb05 {
+            position: absolute;
+        }
+        .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+            position: absolute;
+            /* size of bullet elment */
+            width: 16px;
+            height: 16px;
+            background: url('images/b05.png') no-repeat;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .jssorb05 div { background-position: -7px -7px; }
+        .jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
+        .jssorb05 .av { background-position: -67px -7px; }
+        .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
+
+        /* jssor slider arrow navigator skin 12 css */
+        /*
+        .jssora12l                  (normal)
+        .jssora12r                  (normal)
+        .jssora12l:hover            (normal mouseover)
+        .jssora12r:hover            (normal mouseover)
+        .jssora12l.jssora12ldn      (mousedown)
+        .jssora12r.jssora12rdn      (mousedown)
+        */
+        .jssora12l, .jssora12r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 30px;
+            height: 46px;
+            cursor: pointer;
+            background: url('img/a12.png') no-repeat;
+            overflow: hidden;
+        }
+        .jssora12l { background-position: -16px -37px; }
+        .jssora12r { background-position: -75px -37px; }
+        .jssora12l:hover { background-position: -136px -37px; }
+        .jssora12r:hover { background-position: -195px -37px; }
+        .jssora12l.jssora12ldn { background-position: -256px -37px; }
+        .jssora12r.jssora12rdn { background-position: -315px -37px; }
+
+body{font-family: 'Demo_ConeriaScript_Slanted'; sans-serif;margin: 0;padding: 0;}
+
+#top{
+		width: 100%;
+		height:110px;	background-color: #E6DDDD;padding-top: 5%;
+
+	}
+
+			.logo{
+					width:100%;
+					height: 110px;
+					clear:both;
+					text-align: center;
+
+					
+				 }
+
+			.logo img{
+						width:150px;
+						height:100px;
+
+
+					  }
+
+			#menu{
+					width:85%;
+					height: 30px;
+					background-color: #F0F905;
+					float:left;
+					color:black;margin-top: 1px solid black;
+				}
+
+			.box-menu{width: 5%;height:30px;float: right;text-align: center;background-color: #F0F905;margin-top: 1px solid black; }
+			.box-menu img{width: 20px;height: 20px;margin-top:5px;}
+			#textBig{width: 20px;height: 20px;margin-top:5px;}
+			#textSmall{width: 5px;height: 5px;margin-top:5px;}
+
+			#menu ul{
+				
+				list-style: none;margin-top: 0px;
+			  }
+
+			#menu li{
+				 float:left;
+				 margin-right: 20px;
+				 
+				 text-decoration: none;
+
+			  }
+			 #menu li a{
+			 		text-decoration: none;
+			 		color:black;
+			 	 } 
+			 #menu li img{
+			 				height: 20px;width:1px;margin-left: 20px;opacity: 0.5;margin-top: 3px;
+			 		
+			 				 }
+
+			 #menu a:hover{ 
+			 			color:#807D80;
+			 		}	
+			#reserva-link{text-decoration: line-through;}
+
+#middle{ width: 100%;
+		 height: auto;
+		 clear: both;
+
+		}
+                 
+                  .ser{width:80%;height:auto;padding: 50px 0 40px 20%;}
+                  .ser ul{list-style: none;}
+                  .ser ul li{}
+          .logo-servicio{width:20px;height:20px;margin-right:10px;}
+
+#middle-result{ width: 100%;
+		       height: auto;
+		       clear: both;
+
+		       }
+
+#middle-confirm{ width: 100%;
+		       height: 500px;
+		       clear: both;
+
+		       }
+
+			#context{width:55%;
+					 height: 400px;
+					 float: left;
+					 margin-top: 40px; 
+
+					}
+
+			#context-result{width:55%;
+					 height: auto;
+					 float: left;
+					 margin-top: 40px;
+
+					}
+			#context-confirm{width:55%;
+					         height: auto;
+					         float: left;
+					         margin-top: 40px;
+
+					        }
+
+							.context-box{
+											width: 95%;
+											height: 400px;
+											float: left;
+											color: black;
+											padding-left: 5%;
+
+											
+										}
+										.context-box-result{
+											width: 95%;
+											height: auto;
+											float: left;
+											color: black;
+											padding-left: 5%;
+											color:black;
+											
+										}
+										.context-box-confirm{
+											width: 95%;
+											height: auto;
+											float: left;
+											color: black;
+											
+											color:black;
+											
+											
+										}
+
+
+							.dates{
+										float: left;
+										width: 50%;
+										margin-bottom: 40px;
+									}
+							#fecha1{margin-left: 20px;}
+							#fecha1 img{width:20px;height: 20px;margin-left: 10px;margin-right: 5px;margin-top: 2px;}
+							#fecha2{margin-left: 10%;}
+							#fecha2 img{width:20px;height: 20px;margin-left: 10px;margin-right: 5px;margin-top: 2px;}
+							#adicionales{margin-left: 20px;font-size: 20px;margin-right: 40px;}
+						    .rooms{
+						    			width: 100%;clear:both;margin-bottom: 30px;
+						             }
+
+
+								
+
+							#checkbox{  width: 100%;
+										font-size: 12px;
+										margin-bottom: 100px;
+
+									  }	
+
+							.checkbox{margin-right: 15px;}
+
+							form{height:auto;border: 1px solid black;padding: 15px;border-radius: 5px;}
+
+							#button-search{
+											  width: 95%;
+											background-color: #BBBFAA;
+											color:#372B2B;
+											border-radius: 5px;
+											height: 40px;
+											font-size: 20px;
+										  }
+
+							.matrimonial{	width: 95%;
+											height: 390px;
+											margin-bottom: 40px;
+											border-radius: 3px;
+											border: 1px solid black;
+											padding: 0 2.5%;
+										}
+
+						    .doble{	
+											width: 95%;
+											height: 390px;
+											margin-bottom: 40px;
+											border-radius: 3px;
+											border: 1px solid black;
+											padding: 0 2.5%;
+										}
+							.triple{	
+											width: 95%;
+											height: 390px;
+											margin-bottom: 40px;
+											border-radius: 3px;
+											border: 1px solid black;padding: 5%;
+											padding: 0 2.5%;
+										}
+							.familiar{	
+											width: 95%;
+											height: 390px;
+											margin-bottom: 40px;
+											border-radius: 3px;
+											border: 1px solid black;
+											padding:0  2.5%;
+										}
+
+							.adds{width: 50%;
+										 float:left;
+										 min-height: 80px;
+										}
+							.adds ul li{list-style: none;}
+
+							.description{
+											width: 50%;
+											height: 150px;
+											float: left;
+
+										}
+							.description img{width: 80%;
+											 height: 150px;margin-left: 40px;
+
+											}
+
+							.price{width: 50%;
+									float:right;
+									min-height: 80px;
+									}
+
+							.price ul li{list-style: none;margin-bottom: 8px;}
+
+							.title{width: 50%;float: right;}
+							.title h1{text-align: right; color:blue;}
+							#fecha-buscada{font-size: 14px;}
+          					#hab-disponible{font-size: 14px;color:black;margin-right: 100px;}
+#rc1{}
+
+							
+
+							#choose-number-room{width: 100%;height:30px;margin-bottom:10px; }
+							#choose-number-room label{margin-left: 85px;font-weight: bold;}
+
+							.button-reservar-more{width: 20%;text-align: center;float: left;margin-right: 5%;}
+							.button-reservar-number{width: 20%;text-align: center;float: left;font-weight: bold;}
+							.button-reservar-less{width: 20%;text-align: center;float: left;}
+							.button-reservar{width: 20%;text-align: center;float: left;}
+							.button-confirmar{width: 20%;text-align: center;float: left;}
+                            
+                            .button-reservar-more input{width: 40px;height: 30px;background-color: #BBBFAA;border-radius: 5px;color:#372B2B;
+
+                            							}
+                            .button-reservar-number {width: 40px;height: 30px;color:#372B2B;font-size: 8px;font-size: 28px;margin-top: 0;}
+                             #a1{margin-top:0;}#b1{margin-top:0;}#c1{margin-top:0;}#d1{margin-top:0;}
+                            .button-reservar-less input{width: 40px;height: 30px;background-color: #BBBFAA;border-radius: 5px;color:#372B2B;}
+                            #cantidad1{margin-top: 0px;}
+                            #cantidad2{margin-top: 0px;}
+                            #cantidad3{margin-top: 0px;}
+                            #cantidad4{margin-top: 0px;}
+                            .button-reservar input{width: 100px;height: 30px;background-color: #BBBFAA;border-radius: 5px;color:#372B2B;}
+                            #button-confirmar input{width: 150px;height: 30px;background-color: #BBBFAA;border-radius: 5px;color:#372B2B;border:1px solid black;}
+                            #button-confirmar{margin-top:50px;} #box-confirmar{border:none;}
+                            .anular-adds{width:20px;height:20px;margin-left:20px;}
+
+    #box-button-confirmar{border:0px;border:0px}
+
+                            		#confirmacion-reserva{width: 80%;height: auto;border-radius: 2px;
+                            							  padding:  10% 10%;
+                            							  margin-bottom: 20px;}
+
+                            		#confirmacion-reserva label{margin-top: 50px;}
+                            		#confirmacion-reserva ul{list-style: none;}
+                            
+                            #buttons{text-align: center;}
+                            #anular{margin-left: -50px;}
+                            #confirmar{margin-left: -50px;}
+                            #button-cancelar{color: white;border-radius: 5px;height: 80px;width: 80px;}
+
+                            #button-pagar{border-radius: 5px;height: 80px;width: 80px;}
+
+                            #login{width: 95%;}
+                            #signup{margin-left:50px;color:blue;}
+
+                           #registro-usuario{text-align: center;display: none;}
+                           #registro-usuario label{margin-right: 20px;}
+                           #box-close{width: 100%;text-align: right;}
+                            #box-close img{width: 20px;height: 20px;}
+                            .r-nombre{margin-left: 100px;}
+                            .r-apellido{margin-left: 105px;}
+                            .r-email{margin-left: 120px;}
+                            .r-pass1{margin-left: 82px;}
+                            .r-pass2{margin-left: 20px;}
+
+
+
+
+
+
+			#side{
+					 width:40%;
+					 height: 500px;
+					 float: right;
+					 margin-top: 40px;
+
+				  }
+			#side-result{
+					 width:40%;
+					 height: auto;
+					 float: right;
+					 margin-top: 40px;
+
+				  }
+		    #side-confirm{
+					 width:40%;
+					 height: 500px;
+					 float: right;
+					 margin-top: 40px;
+
+				  }
+
+				  		.next{width: 100%;height: 6%;
+				  			  text-align: center;}
+
+				  		.next img{
+				  					width: 40px;
+				  					height: 40px; 
+
+				  				 }
+
+				  		#picture{width: 100%;height: 83%;}
+
+				  		#picture img{
+				  						margin: auto;
+				  						width:100%;
+				  						height: 100%;
+
+
+				  					}
+                        
+                                               #change-date-icon{}
+
+				  		#change-date{
+				  						width: 37%;
+				  						position: fixed;
+				  						margin-bottom: 100px;
+				  						z-index: 2;
+				  						background-color:#17FDE5;
+				  						opacity: 0.9;
+				  						padding-left: 3%;
+				  						padding-bottom: 2%;
+                                                                                display:none;
+				  						
+
+				  					}
+
+				  		#change-date label{margin-right: 20px;}
+				  		#change-date input{margin-right: 20px;}
+
+				  		#button-search-change{  margin-top: 20px;
+						  						background-color: #BBBFAA;
+						  						width: 91%;
+						  						height: 20px;
+						  						font-size: 14px;
+						  						
+						  					    color:#372B2B;
+
+
+				  					  }
+
+				  		#comment{
+				  					width: 100%;
+				  					height: 1150px;
+				  					margin-top: 200px;
+				  					text-align: center;
+				  					border-left: 1px solid #9D9898;
+
+				  				}
+
+                                                #seleccion{
+				  					width: 100%;
+				  					min-height: 400px;
+				  					max-height: auto;
+				  					margin-top: 0px;
+				  					text-align: center;
+				  					background-color:lightgrey;
+                                                                       
+
+				  				}
+				  		#comment-confirm{
+						  					width: 100%;
+						  					height: 500px;
+						  					
+						  					
+						  					text-align: center;
+						  					border-left: 1px solid #9D9898;
+
+				  				}
+				  		#TA_selfserveprop633 {padding-left: 10%;}
+			  			
+                                              #mostrando b{color:blue;}
+
+                                                #Total{width:100%;text-align:center;color:blue;}
+
+#foot{
+		width:100%;
+		height: 200px;
+		clear: both;
+		border-top: 1px solid black;background-color: #E6DDDD;
+		
+	 }
+
+			.foot-box{ width:33.3%;
+					   height: 200px;
+					   float:right;
+					   text-align: left;
+					  }
+					  .logoF{
+					width:50%;
+					height: 110px;
+					clear:both;
+					text-align: center;float: left;
+
+					
+				 }
+
+			.logoF img{
+						width:150px;
+						height:100px;
+						margin-top: 50px;
+
+
+					  }
+
+					.foot-box ul{list-style: none;float: right;}
+					.foot-box ul li {}
+					.foot-box ul li a{text-align: left;text-decoration: none;color:black;}
+					.foot-box ul li a img{width: 20px;height: 20px;margin-left: 20px;}
+					#social{margin-top: 10px;}
+
+					#autor{font-family: 'Open Sans', sans-serif;font-size: 12px;background-color:#E6DDDD;color:black;
+				          }

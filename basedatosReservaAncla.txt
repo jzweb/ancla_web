@@ -1,0 +1,112 @@
+create table habitacion(
+id int(5) Primary key,
+nombre varchar(20),
+tipo varchar(10),
+precio int (5),
+id_reserva int(5),
+foreign key(id_reserva)references reserva(id)
+);
+
+create table estado(
+id number(5) primary key,
+estado varchar2(20),
+fecha date,
+id_habitacion number(5)
+foreign key(id_habitacion)references habitacion(id)
+);
+
+create table Extras(
+id number(5) Primary key,
+fecha date,
+tipo varchar2(20)
+);
+
+create table desayuno(
+id number(5) primary key,
+nombre varchar2(20),
+precio number(5),
+id_Extras number(5),
+foreign key (id_Extras)references Extras(id)
+);
+
+create table otros(
+id number(5) primary key,
+nombre varchar2(20),
+precio number(5),
+id_Extras number(5),
+foreign key (id_Extras)references Extras(id)
+);
+
+create table cliente(
+dni number(8) primary key,
+nombre varchar2(20),
+apellido varchar2(20),
+sexo char(2),
+nacionalidad varchar2(20),
+email varchar2(40),
+telefono number(8),
+
+);
+
+create table reserva(
+idint(5),
+fecha date,
+fecha_inicio date,
+fecha_fin date,
+id_dni int(8),
+id_habitacion int(5),
+foreign key(id_dni)references cliente(dni),
+foreign key(id_habiatcion)references habitacion(id)
+)
+
+create reserva_cancelacion(
+id number(5) primary key,
+fecha date,
+porcentaje number(5),
+id_reserva number(5),
+foreign key(id_reserva)references reservas(id)
+);
+
+
+******busqueda de reservas por fechas***
+
+select count(tipo) as Cantidad from habitacion inner join reserva on habitacion.id=reserva.id_habitacion where  fecha_inicio='2016-05-11' and fecha_fin='2016-05-17' 
+between('2016-05-11' and '2016-05-17')and tipo="Matrimonial"
+
++++++++++++++++
+
+create table cliente(
+dni int(8)Primary Key,
+nombre varchar(20),
+apellido varchar(20),
+email varchar(40),
+contraseña varchar(10)
+);
+
+create table habitacion(
+id int(5)Primary Key,
+nombre varchar(20),
+tipo varchar(20),
+precio int(5)
+);
+
+
+create table reserva(
+id int(5)Primary Key,
+fechaInicio date,
+fechaFin date,
+cantidadHabitaciones int(5),
+importe int(5),
+estado varchar(10),
+dni_cliente int(8),
+foreign key(dni_cliente)references cliente(dni)
+);
+
+create table detalle_reserva(
+id int(5) Primary Key,
+id_reserva int(5),
+id_habitacion int(5),
+foreign key(id_reserva)references reserva(id),
+foreign key(id_habitacion)references habitacion(id)
+)
+

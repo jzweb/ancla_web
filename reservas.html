@@ -1,0 +1,88 @@
+
+
+
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/estilo.css">
+ 
+   
+<title>Hostal El Ancla / Reservas</title>
+</head>
+<body>
+<div id="container">
+			<div id="top">
+							<div class="logo"><a href="index.html"><img src="icons/logoancla.png"></a>
+							</div>
+							<div id="menu">
+								<ul>
+									<li><a href="<!--acercaNosotros.html-->">Sobre Nosotros</a><img src="icons/line.png"></li>
+									<li><a href="<!--servicios.html-->">Servicios</a><img src="icons/line.png"></li>
+									<Li><a href="<!--galleria.html-->">Galeria</a><img src="icons/line.png"></li>
+									<li><a href="<!--reservas.html-->">Reservas</a><img src="icons/line.png"></li>
+									<li><a href="<!--preguntas.html-->">Preguntas Frecuentes</a><img src="icons/line.png"></li>
+								</ul>
+							</div>
+							<div class="box-menu"><img src="icons/textBig.png" onclick="changeTextBig()";></div>
+<div class="box-menu"><img src="icons/textSmall.png" onclick="changeTextSmall()";></div>
+							<div class="box-menu"><img src="icons/email.png"></div>
+			</div>
+
+    <div id="middle">
+    	<div id="context">
+								<div class="context-box">
+										<h1>Busqueda de habitaciones: </h1>
+										<form action="resultados.php" method="post">
+											<label id="fecha1">Entrada:<img src="icons/calendario.png"></label><input type="text" name="entrada">
+											<label id="fecha2">Salida:<img src="icons/calendario.png"></label><input type="text" name="salida"><br><br>
+											<!--<select name="tipo">
+												<option value="Matrimonial">Matrimonial</option>
+												<option value="Doble">Doble</option>
+												<option value="Triple">Triple</option>
+												<option value="Familiar">Familiar</option>
+
+											</select><br><br>-->
+											  <label id="adicionales">Servicios adicionales:</label>
+											  <input type="checkbox" name="Mascota" value="Mascota" class="checkbox"> Mascota
+											  <input type="checkbox" name="Parking" value="Parking"  class="checkbox"> Parking
+											  <input type="checkbox" name="Desayuno" value="Desayuno"  class="checkbox"> Desayuno<br><br>
+									        
+											<input type="submit" value="Buscar" id="button-search">
+									    </form>
+									</div>
+								</div>
+	</div>
+	<div id="foot">
+			<div class="foot-box">
+
+					
+					<ul><li><a href="conectMysql.html">Mapa<img src="icons/mapa.png"></a></li>
+					<li><a href="<!--servicios.html-->">Tours<img src="icons/servicios.png"></a></li>
+					<Li><a href="<!--galleria.html-->">Surf (clases/viajes)<img src="icons/surf.png"></a></li>
+					</ul>
+
+
+			</div>
+			<div class="foot-box">
+				<ul>
+					<li><a href="conectMysql.html">Sobre Nosotros<img src=""></a></li>
+					<li><a href="<!--servicios.html-->">Servicios<img src="icons/servicios.png"></a></li>
+					<Li><a href="<!--galleria.html-->">Galeria<img src="icons/fotos.png"></a></li>
+					<li><a href="reservas.html">Reservas<img src="icons/reservas.png"></a></li>
+					<li><a href="<!--preguntas.html-->">Preguntas Frecuentes<img src="icons/preguntas.png"></a></li>
+			    </ul>
+					
+			</div>
+			<div class="foot-box">
+				    <div class="logoF"><img src="icons/logoancla.png"></div>
+					<ul>Escribemos:<li id="social"><a href="conectMysql.html"><img src="icons/facebook.png"></a><a href="<!--servicios.html-->"><img src="icons/email.png"></a></li>
+					
+					
+					</ul>
+			</div>
+
+<div id="autor">by Jorge Zevallos copyright2016</div>
+</div>
+
+</div>
+</body>
+</html>
